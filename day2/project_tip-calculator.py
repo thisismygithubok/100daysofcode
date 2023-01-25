@@ -16,12 +16,11 @@ print(f"Each person owes: ${per_person}")
 
 #Here's an expanded calc which asks how many people and the tip % as well.
 
-total_2 = input("What was the total? : $")
+total_2 = float(input("What was the total? : $"))
 people_2 = int(input("How many people? : "))
 tip = int(input("What is the tip percentage? : "))
 
-total_int_2 = float(total_2)
 tip_corrected = (tip / 100) + 1
-per_person = round((total_int_2 / people_2 * tip_corrected),2)
+per_person = round((total_2 / people_2 * tip_corrected),2)
 
 print(f"Each person owes: ${per_person}")
