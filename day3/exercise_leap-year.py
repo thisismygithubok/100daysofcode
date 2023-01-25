@@ -8,8 +8,8 @@
 
 year = int(input("What year do you want to check? : "))
 
-div_4 = year % 4 #Is year fully divisible by 4? What is the remainder? If remainder is whole, leap year!, if remainder is not whole, not leap year.
-div_100 = year % 100 #Is year fully divisible by 100? What is the remainder? If remainder is whole, not a leap year UNLESS year/400 IS whole
+div_4 = year % 4 #Is year fully divisible by 4? No? No leap year... If it IS fully divisible, is it fully divisible by 100?
+div_100 = year % 100 #Is year fully divisible by 100? No? Leap year! If it IS fully divisible, not a leap year UNLESS year/400 IS also fully divisible
 div_400 = year % 400 #Is year fully divisible by 4, 100, AND 400? Leap year!
 if div_4 == 0:
     if div_100 == 0:
