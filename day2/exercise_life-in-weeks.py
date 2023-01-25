@@ -15,5 +15,6 @@ years = 90 - int_age #Takes the int'd age subtracted from 90 to get years remain
 days = years * 365 #Takes those remaining years * 365 to get days remaining.
 weeks = years * 52 #Takes those remaining years * 52 to get weeks remaining.
 months = years * 12 #Takes those remaining years * 12 to get months remaining.
+message = f"You have {days} days, {weeks} weeks, and {months} months left."
 
-print(f"You have {days} days, {weeks} weeks, and {months} months left.") #Printed result is same.
+print(message) #Printed result is same.
