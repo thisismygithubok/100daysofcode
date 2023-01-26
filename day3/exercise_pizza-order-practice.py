@@ -40,9 +40,7 @@ else:
 if add_pepperoni == "Y":
     if size == "S":
         bill += 2
-    if size == "M":
-        bill += 3
-    if size == "L":
+    else:
         bill += 3
 
 if extra_cheese == "Y":
