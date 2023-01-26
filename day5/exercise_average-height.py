@@ -20,7 +20,7 @@ for each_student in student_heights: #Iterating through the student heights list
     count += 1 #Takes the base count of 0 and adds 1 for each list item it goes through, essentially counting how many list entries there are
 #print(count)
 
-average_height = round(total_height/count)
+average_height = round(total_height/count) #Takes the average by rounding the total height / the count of students
 print(average_height)
 
 #total_height = total_height / len(student_heights)
