@@ -50,10 +50,3 @@ for each in password_list:
     password_random += each #For each item in the now shuffled password, add it into the string.
 
 print(f"Your shuffled random password is: {password_random}") #Print the final jumbled password string.
-
-
-
-
-
-    
-
