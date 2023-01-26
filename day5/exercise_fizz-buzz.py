@@ -2,13 +2,10 @@
 
 for each in range(1,101):
     if each % 3 == 0 and each % 5 == 0:
-        each = "FizzBuzz"
-        print(each)
+        print("FizzBuzz")
     elif each % 3 == 0:
-        each = "Fizz"
-        print(each)
+        print("Fizz")
     elif each % 5 == 0:
-        each = "Buzz"
-        print(each)
+        print("Buzz")
     else:
         print(each)
