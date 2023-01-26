@@ -18,20 +18,20 @@ password_list = []
 password = ""
 
 for each in range(num_letters): #Iterate through however many numbers the user selects
-    random_letters = random.randint(0,int_letters-1) #Select a random letter's int value
-    letter_selection = letters[random_letters] #Tells it what letter to grab from the letter list based on the random letter # - 1 (without -1 would be out of range)
+    random_letters = random.randint(0,int_letters-1) #Select a random letter's int value based on the random letter # - 1 (without -1 would be out of range)
+    letter_selection = letters[random_letters] #Tells it what letter to grab from the letter list
     password += letter_selection ##Append the selected letter into the password string
     password_list.append(letter_selection) #Append the selected letter into the password_list array
 
 for each in range(num_symbols): #Iterate through however many numbers the user selects
-    random_symbols = random.randint(0,int_symbols-1) #Select a random symbol's int value
-    symbol_selection = symbols[random_symbols] #Tells it what symbol to grab from the symbol list based on the random symbol # - 1 (without -1 would be out of range)
+    random_symbols = random.randint(0,int_symbols-1) #Select a random symbol's int value based on the random symbol # - 1 (without -1 would be out of range)
+    symbol_selection = symbols[random_symbols] #Tells it what symbol to grab from the symbol list
     password += symbol_selection ##Append the selected letter into the password string
     password_list.append(symbol_selection) #Append the selected letter into the password_list array
 
 for each in range(num_numbers): #Iterate through however many numbers the user selects
-    random_numbers = random.randint(0,int_numbers-1) #Select a random number's int value
-    number_selection = numbers[random_numbers] #Tells it what number to grab from the number list based on the random number # - 1 (without -1 would be out of range
+    random_numbers = random.randint(0,int_numbers-1) #Select a random number's int value based on the random number # - 1 (without -1 would be out of range)
+    number_selection = numbers[random_numbers] #Tells it what number to grab from the number list
     password += number_selection ##Append the selected letter into the password string
     password_list.append(number_selection) #Append the selected letter into the password_list array
 
