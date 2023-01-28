@@ -2,6 +2,7 @@
 import random
 from art import stages,logo #Import stages and logo from art.py
 from dictionary import word_list #Import word_list from dictionary.py
+import os #Importing to be able to clear screen after each guess
 
 # word_list = ["Australia","Germany","Cameroon"] #Debug - set local word list
 chosen_word = random.choice(word_list).lower() #Randomly choose a word from the word list
@@ -13,12 +14,13 @@ for _ in range(len_chosen_word): #Adding a "_" to the display list for however m
     display += "_"
 #print(display) #Debug - printing out the display to see if it properly created it
 print(logo)
-print("The word is: "+chosen_word) #Debug - printing out that randomly chosen word
+# print("The word is: "+chosen_word) #Debug - printing out that randomly chosen word
 
 end_of_game = False #Setting current end of game status to false
 
 while not end_of_game: #While loop to run through while end of game still = false
     guess = input("\nGuess a letter: ").lower() #Take user guess input as guess
+    os.system("clear") #Running clear command to keep only most recent guess on screen
     if guess in display:
       print("You've already guessed: "+guess+"!") #Print out the user guess if they've already guessed that letter and it was right
     for position in range(len_chosen_word): #For each position in range of the length of chosen_word
